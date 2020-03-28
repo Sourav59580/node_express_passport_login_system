@@ -9,6 +9,9 @@ const session = require('express-session');
 
 const app = express();
 
+//static file
+app.use(express.static('public'));
+
 // Passport Config
 require('./config/passport')(passport);
 
